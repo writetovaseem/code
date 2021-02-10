@@ -32,6 +32,11 @@ Date:   Mon May 11 09:42:47 2020 -0700
 
 
 def logparse(data):
+    '''
+    description: parse commit log based on commitid, author, date and msg
+    type: data: string
+    rtype: dict
+    '''
     glog = data.split('\n')
     if not glog:
         return None
